@@ -1,5 +1,6 @@
+
 import { jsx, Box, Container, Image, Text } from 'theme-ui';
-import { Link } from "../link";
+import { Link } from 'components/link';
 import data from './footer.data';
 import FooterLogo from 'assets/logo.svg';
 
@@ -7,7 +8,7 @@ export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
-        <Box sx={styles.footer.footerBottomArea}>
+        <box sx={styles.footer.footerBottomArea}>
           <Link path="/">
             <Image src={FooterLogo} alt="Logo" />
           </Link>
@@ -26,7 +27,7 @@ export default function Footer() {
           <Text sx={styles.footer.copyright}>
             Copyright by {new Date().getFullYear()} Company Name
           </Text>
-        </Box>
+        </box>
       </Container>
     </footer>
   );
